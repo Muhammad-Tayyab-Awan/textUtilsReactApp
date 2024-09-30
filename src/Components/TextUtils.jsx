@@ -65,7 +65,7 @@ function TextUtils(props) {
 
   async function autoCorrect() {
     let url = "https://api.textgears.com/correct?";
-    let key = "CJZR02ZrwJ26G7Gw";
+    // missing is the api key
     let textToCorrect = text.trim().replace(/\s+/g, " ");
     let jsonResponse = await fetch(`${url}text=${textToCorrect}&key=${key}`);
     let response = await jsonResponse.json();
