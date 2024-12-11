@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function Footer(props) {
   let date = new Date();
   return (

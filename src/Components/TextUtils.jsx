@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -65,7 +66,7 @@ function TextUtils(props) {
 
   async function autoCorrect() {
     let url = "https://api.textgears.com/correct?";
-    // missing is the api key
+    let key = "CJZR02ZrwJ26G7Gw";
     let textToCorrect = text.trim().replace(/\s+/g, " ");
     let jsonResponse = await fetch(`${url}text=${textToCorrect}&key=${key}`);
     let response = await jsonResponse.json();

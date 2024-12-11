@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import logo from "../assets/favicon.svg";
 import github from "../assets/github.svg";
 import day from "../assets/day.svg";
